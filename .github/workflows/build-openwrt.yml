@@ -4,12 +4,14 @@
 # Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
-#fgfyfy
 #=================================================
 
 name: Build OpenWrt
 
 on:
+  watch:
+  pull_request:
+    types: started
   repository_dispatch:
   release:
     types: published
